@@ -1,6 +1,6 @@
 # Creating_new_user_with_firebase_in_Swift
 ## [Creating_new_user_with_firebase_in_Swift](https://stackoverflow.com/questions/36579138/creating-new-user-with-firebase-in-swift) <br><br>
-
+### [Add Firebase to your Apple project](https://firebase.google.com/docs/ios/setup) <br><br>
 [IOS Introducing Firebase with Swift 3: Login and Sign Up](https://www.appcoda.com/firebase-login-signup/) <br><br>
 ![Screenshot 2023-09-18 at 4 36 45 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/a7d2556f-c4b7-4b7e-b02a-323e3a563724)
 ![Screenshot 2023-09-18 at 4 16 41 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/189a967a-90f8-4f1c-af71-d6945132c1b8)
