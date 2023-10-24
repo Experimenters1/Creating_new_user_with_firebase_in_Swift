@@ -15,12 +15,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+  
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // Đăng ký một Gesture Recognizer để bắt sự kiện khi người dùng chạm vào màn hình
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+                view.addGestureRecognizer(tapGesture)
        
     }
+    
+    // Hàm để ẩn bàn phím khi người dùng chạm vào màn hình
+      @objc func hideKeyboard() {
+          view.endEditing(true)
+      }
 
     @IBAction func createAccountAction(_ sender: Any) {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
@@ -40,6 +51,10 @@ class ViewController: UIViewController {
                     let ref = Database.database().reference().child("users").child(user.uid)
                     ref.setValue(userData)
                 }
+                
+                // Hide the navigation bar
+                self.navigationController?.isNavigationBarHidden = true
+
                 
                 // Go to the setup page or another view as needed
                 let allFilesViewController = LoginViewController.makeSelf()
@@ -68,13 +83,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func ResetPassword(_ sender: Any) {
-        let allFilesViewController = ResetPasswordViewController.makeSelf()
-                       
-        DispatchQueue.main.async {
-            self.navigationController?.pushViewController(allFilesViewController, animated: true)
-        }
-    }
+   
     
     
     

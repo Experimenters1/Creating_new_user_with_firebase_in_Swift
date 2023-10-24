@@ -16,12 +16,23 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
+    var email : String = ""
+    var password : String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Đăng ký một Gesture Recognizer để bắt sự kiện khi người dùng chạm vào màn hình
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+                view.addGestureRecognizer(tapGesture)
 
-        // Do any additional setup after loading the view.
-        navigationItem.hidesBackButton = true
     }
+    
+    // Hàm để ẩn bàn phím khi người dùng chạm vào màn hình
+        @objc func hideKeyboard() {
+            view.endEditing(true)
+        }
     
     
     @IBAction func loginAction(_ sender: Any) {
@@ -30,6 +41,11 @@ class LoginViewController: UIViewController {
                    showAlert(title: "Error", message: "Please enter an email and password.")
                    return
                }
+        
+        // Lưu email và password vào UserDefaults
+            UserDefaults.standard.set(email, forKey: "checkLoginEmail")
+            UserDefaults.standard.set(password, forKey: "checkLoginPassword")
+
 
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
             if error == nil {
@@ -62,6 +78,11 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func SignUp(_ sender: Any) {
+        
+        // Hide the navigation bar button
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        
         let allFilesViewController = ViewController.makeSelf()
                        
         DispatchQueue.main.async {

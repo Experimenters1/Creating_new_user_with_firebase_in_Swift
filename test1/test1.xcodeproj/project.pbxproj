@@ -16,7 +16,6 @@
 		2E159E792AB82B2700197A37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E159E782AB82B2700197A37 /* LoginViewController.swift */; };
 		2E159E7B2AB82B8F00197A37 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E159E7A2AB82B8F00197A37 /* ResetPasswordViewController.swift */; };
 		2E159E7D2AB82BF100197A37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E159E7C2AB82BF100197A37 /* HomeViewController.swift */; };
-		2E159E7F2AB8328500197A37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E159E7E2AB8328500197A37 /* GoogleService-Info.plist */; };
 		2E159E822AB8330B00197A37 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159E812AB8330B00197A37 /* FirebaseAnalytics */; };
 		2E159E842AB8330B00197A37 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159E832AB8330B00197A37 /* FirebaseAnalyticsOnDeviceConversion */; };
 		2E159E862AB8330B00197A37 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159E852AB8330B00197A37 /* FirebaseAnalyticsSwift */; };
@@ -44,6 +43,10 @@
 		2E159EB22AB8330B00197A37 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159EB12AB8330B00197A37 /* FirebaseRemoteConfigSwift */; };
 		2E159EB42AB8330B00197A37 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159EB32AB8330B00197A37 /* FirebaseStorage */; };
 		2E159EB62AB8330B00197A37 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2E159EB52AB8330B00197A37 /* FirebaseStorageCombine-Community */; };
+		2E5EE29C2AE66257002F47BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E5EE29B2AE66257002F47BE /* GoogleService-Info.plist */; };
+		2E5EE2C02AE6B21F002F47BE /* checkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EE2BF2AE6B21F002F47BE /* checkLogin.swift */; };
+		2E5EE2C22AE6B4AA002F47BE /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EE2C12AE6B4AA002F47BE /* ChatUser.swift */; };
+		2EE2413B2AE7645C00997ECF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE2413A2AE7645C00997ECF /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +61,10 @@
 		2E159E782AB82B2700197A37 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E159E7A2AB82B8F00197A37 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		2E159E7C2AB82BF100197A37 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2E159E7E2AB8328500197A37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E5EE29B2AE66257002F47BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E5EE2BF2AE6B21F002F47BE /* checkLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkLogin.swift; sourceTree = "<group>"; };
+		2E5EE2C12AE6B4AA002F47BE /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		2EE2413A2AE7645C00997ECF /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,19 +124,30 @@
 		2E159E632AB8083F00197A37 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				2EE241392AE7642700997ECF /* Extensions */,
 				2E159E642AB8083F00197A37 /* AppDelegate.swift */,
 				2E159E662AB8083F00197A37 /* SceneDelegate.swift */,
 				2E159E682AB8084000197A37 /* ViewController.swift */,
 				2E159E782AB82B2700197A37 /* LoginViewController.swift */,
 				2E159E7A2AB82B8F00197A37 /* ResetPasswordViewController.swift */,
 				2E159E7C2AB82BF100197A37 /* HomeViewController.swift */,
+				2E5EE2BF2AE6B21F002F47BE /* checkLogin.swift */,
+				2E5EE2C12AE6B4AA002F47BE /* ChatUser.swift */,
 				2E159E6A2AB8084000197A37 /* Main.storyboard */,
 				2E159E6D2AB8084000197A37 /* Assets.xcassets */,
+				2E5EE29B2AE66257002F47BE /* GoogleService-Info.plist */,
 				2E159E6F2AB8084000197A37 /* LaunchScreen.storyboard */,
 				2E159E722AB8084000197A37 /* Info.plist */,
-				2E159E7E2AB8328500197A37 /* GoogleService-Info.plist */,
 			);
 			path = test1;
+			sourceTree = "<group>";
+		};
+		2EE241392AE7642700997ECF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EE2413A2AE7645C00997ECF /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E159E712AB8084000197A37 /* LaunchScreen.storyboard in Resources */,
-				2E159E7F2AB8328500197A37 /* GoogleService-Info.plist in Resources */,
+				2E5EE29C2AE66257002F47BE /* GoogleService-Info.plist in Resources */,
 				2E159E6E2AB8084000197A37 /* Assets.xcassets in Resources */,
 				2E159E6C2AB8084000197A37 /* Main.storyboard in Resources */,
 			);
@@ -237,11 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5EE2C22AE6B4AA002F47BE /* ChatUser.swift in Sources */,
 				2E159E792AB82B2700197A37 /* LoginViewController.swift in Sources */,
 				2E159E692AB8084000197A37 /* ViewController.swift in Sources */,
+				2E5EE2C02AE6B21F002F47BE /* checkLogin.swift in Sources */,
 				2E159E7B2AB82B8F00197A37 /* ResetPasswordViewController.swift in Sources */,
 				2E159E652AB8083F00197A37 /* AppDelegate.swift in Sources */,
 				2E159E672AB8083F00197A37 /* SceneDelegate.swift in Sources */,
+				2EE2413B2AE7645C00997ECF /* UIView.swift in Sources */,
 				2E159E7D2AB82BF100197A37 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FX323KNBX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -416,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FX323KNBX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
