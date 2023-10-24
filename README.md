@@ -36,4 +36,23 @@ self.navigationController?.isNavigationBarHidden = false
 ![Screenshot 2023-09-18 at 4 16 51 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/3aa893e5-b154-47de-a3ba-8c64205132bb)
 ![Screenshot 2023-09-18 at 4 17 06 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/ca59bdac-c258-4f95-b5b7-c95fd7318c65)
 
+```swift
+import UIKit
 
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Đăng ký một Gesture Recognizer để bắt sự kiện khi người dùng chạm vào màn hình
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+
+    // Hàm để ẩn bàn phím khi người dùng chạm vào màn hình
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+
+```
