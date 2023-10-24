@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-  
+    @IBOutlet weak var First_Name: UITextField!
+    
+    @IBOutlet weak var Last_Name: UITextField!
     
     
     
@@ -51,6 +53,13 @@ class ViewController: UIViewController {
                     let ref = Database.database().reference().child("users").child(user.uid)
                     ref.setValue(userData)
                 }
+                
+                // Lưu dữ liệu từ hai UITextField vào UserDefaults
+                UserDefaults.standard.set(self.First_Name.text, forKey: "First_Name")
+                UserDefaults.standard.set(self.Last_Name.text, forKey: "Last_Name")
+                       
+                       // Lưu trạng thái mới của UserDefaults
+                       UserDefaults.standard.synchronize()
                 
                 // Hide the navigation bar
                 self.navigationController?.isNavigationBarHidden = true

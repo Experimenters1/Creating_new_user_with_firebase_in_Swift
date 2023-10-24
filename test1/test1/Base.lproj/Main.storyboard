@@ -140,6 +140,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="IeV-0Y-GXN"/>
                     <connections>
+                        <outlet property="First_Name" destination="MNo-0p-Vm5" id="j6X-0k-uwz"/>
+                        <outlet property="Last_Name" destination="srF-iZ-oXO" id="Epb-WK-ppt"/>
                         <outlet property="emailTextField" destination="Qjg-Ca-zcb" id="e5d-Qh-qfx"/>
                         <outlet property="passwordTextField" destination="FrY-tI-cDX" id="1Xe-Vc-MvX"/>
                     </connections>
