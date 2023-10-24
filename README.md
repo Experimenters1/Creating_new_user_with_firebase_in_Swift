@@ -25,10 +25,13 @@ self.navigationController?.isNavigationBarHidden = false
 
 ```
 
-![Screenshot 2023-10-24 at 11 48 33 AM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/10e757ba-6cf6-4474-87f0-362b168df315)
+
 
 
 ![Screenshot 2023-09-18 at 4 36 45 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/a7d2556f-c4b7-4b7e-b02a-323e3a563724)
+
+![Screenshot 2023-10-24 at 11 48 33 AM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/10e757ba-6cf6-4474-87f0-362b168df315)
+
 ![Screenshot 2023-09-18 at 4 16 41 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/189a967a-90f8-4f1c-af71-d6945132c1b8)
 ![Screenshot 2023-09-18 at 4 16 51 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/3aa893e5-b154-47de-a3ba-8c64205132bb)
 ![Screenshot 2023-09-18 at 4 17 06 PM](https://github.com/Experimenters1/Creating_new_user_with_firebase_in_Swift/assets/64000769/ca59bdac-c258-4f95-b5b7-c95fd7318c65)
